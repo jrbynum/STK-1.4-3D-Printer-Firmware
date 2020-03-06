@@ -28,7 +28,7 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "frankienstein-1.2.9"
+#define SHORT_BUILD_VERSION "frankienstein-2.0.0"
 
 /**
  * Verbose version identifier which should contain a reference to the location
