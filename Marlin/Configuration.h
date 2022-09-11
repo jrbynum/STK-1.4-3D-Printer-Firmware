@@ -36,7 +36,7 @@
  * Advanced settings can be found in Configuration_adv.h
  *
  */
-#define CONFIGURATION_H_VERSION 020004
+#define CONFIGURATION_H_VERSION 020005
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Rusty Bynum, FRANKEINSTIEN)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Rusty Bynum, Custom TAZ)" // Who made the changes.
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -134,7 +134,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Frankien Printer"
+#define CUSTOM_MACHINE_NAME "Custom TAZ 6"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -147,7 +147,7 @@
 #define EXTRUDERS 1
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
-#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
+#define DEFAULT_NOMINAL_FILAMENT_DIA 3.0
 
 // For Cyclops or any "multi-extruder" that shares a single nozzle.
 //#define SINGLENOZZLE
@@ -491,18 +491,19 @@
 // #define DEFAULT_Kd 125
 
 // E3D v6 (PT100, 30W)
-#define DEFAULT_Kp 19.28
-#define DEFAULT_Ki 1.24
-#define DEFAULT_Kd 74.72
+//#define DEFAULT_Kp 19.28
+//#define DEFAULT_Ki 1.24
+//#define DEFAULT_Kd 74.72
 
 //Current PID settings with E3D no Boot 2/17/2020 
 //#define DEFAULT_Kp 26.07
 //#define DEFAULT_Ki 2.07
 //#define DEFAULT_Kd 32.57
 
-//#define DEFAULT_Kp 28.79
-//#define DEFAULT_Ki 1.91
-//#define DEFAULT_Kd 108.51
+//Hex Hotend
+#define DEFAULT_Kp 28.79
+#define DEFAULT_Ki 1.91
+#define DEFAULT_Kd 108.51
 
 // Buda 2.0 on 12V
 //#define DEFAULT_Kp 22.2
@@ -767,7 +768,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100.5, 100.5, 400, 800.7 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100.5, 100.5, 400, 800.7 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100.5, 100.5, 1600, 850 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -985,7 +987,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -42, +2.5, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -60.8, +5.7, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
