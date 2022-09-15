@@ -28,7 +28,7 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "frankienstein-2.0.1"
+#define SHORT_BUILD_VERSION "custom-2.1.0"
 
 /**
  * Verbose version identifier which should contain a reference to the location
@@ -46,7 +46,7 @@
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-#define MACHINE_NAME "Frankeinstein Printer"
+#define MACHINE_NAME "DIY Custom Printer"
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
